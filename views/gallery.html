@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Gallery | Lab Express</title>
+        <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name="description" content="" />
+        <meta name="author" content="Julien Sebag" />
+        <meta property="og:title" content="" />
+        <meta property="og:type" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:site_name" content="" />
+        <meta property="og:locale" content="en_GB" />
+        <!-- Website Language (see here https://stackoverflow.com/questions/3191664/list-of-all-locales-and-their-short-codes) -->
+        <link href="/images/" rel="shortcut icon" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="/css/style.min.css" />
+
+        <!-- JS -->
+    </head>
+
+    <body>
+        <header>
+            <a href="/">
+                <img src="/images/rone-logo.png" alt="Logo">
+            </a>
+
+            <nav>
+                <a href="/">Home</a>
+                <a href="/about">About him</a>
+                <a href="/works">His works</a>
+                <a href="/gallery" class="active">Gallery</a>
+            </nav>
+        </header>
+
+        <div class="slider">
+            <ul class="slides">
+                <li><img src="/images/rone.png" alt="Rone"></li>
+                <li>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZtONGk-ViRk"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </li>
+                <li>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bB4yjbd_EWI"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </li>
+                <li>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KbKD5KhqFJQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </li>
+            </ul>
+
+            <ul class="pagination"></ul>
+
+            <div class="buttons">
+                <button id="previous">
+                    <svg>
+                        <use xlink:href="/images/icon-sprite.svg#chevron-left"></use>
+                    </svg>
+                </button>
+
+                <button id="next">
+                    <svg>
+                        <use xlink:href="/images/icon-sprite.svg#chevron-right"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- JS -->
+        <script src="/js/slider.js"></script>
+    </body>
+</html>
