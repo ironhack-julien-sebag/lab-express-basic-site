@@ -170,7 +170,28 @@ p a {
     }
 
     .pagination {
-        display: none;
+        position: absolute;
+        bottom: -50px;
+        z-index: 10;
+        @include ulNone();
+        width: 100%;
+        @include flexbox(center, center, nowrap);
+
+        li {
+            $size: 12px;
+            width: $size;
+            height: $size;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 50%;
+
+            &:not(:last-child) {
+                margin-right: var(--margin-xs);
+            }
+
+            &.active {
+                background-color: $dark-blue;
+            }
+        }
     }
 
     .buttons {
